@@ -26,7 +26,7 @@ income_level = st.sidebar.radio(
 )
 
 # filter by price
-df = df[df.price >= price_filter]
+df = df[df.median_house_value >= price_filter]
 
 # Filter by income level
 if income_level == 'Low (≤2.5)':
