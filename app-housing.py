@@ -25,6 +25,8 @@ income_level = st.sidebar.radio(
     ('Low (≤2.5)', 'Medium (> 2.5 & < 4.5)', 'High (> 4.5)')
 )
 
+# filter by price
+df = df[df.price >= price_filter]
 
 # Filter by income level
 if income_level == 'Low (≤2.5)':
